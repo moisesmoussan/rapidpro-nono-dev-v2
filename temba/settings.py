@@ -6,7 +6,7 @@ import os
 # CORE
 # ------------------------------------------------------------------------------
 
-DEBUG = True
+DEBUG = os.environ.get("DJANGO_DEBUG", "False").lower() == "true"
 
 SECRET_KEY = os.environ.get(
     "SECRET_KEY",
