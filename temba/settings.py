@@ -53,6 +53,8 @@ REDIS_URL = os.environ.get("VALKEY_URL", "")
 
 #CELERY_BROKER_URL = REDIS_URL
 CELERY_BROKER_URL = os.environ.get("CELERY_BROKER_URL", "")
+CELERY_TASK_ALWAYS_EAGER = False #Alberto False para Producción, True para desarrollo
+CELERY_TASK_EAGER_PROPAGATES = False #Alberto False para Producción, True para desarrollo
 
 # ------------------------------------------------------------------------------
 # MAILROOM
