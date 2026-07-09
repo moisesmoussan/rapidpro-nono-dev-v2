@@ -123,7 +123,7 @@ BRAND = {
         "hero": "brands/rapidpro/splash.jpg",
     },
     "features": ["sso"],
-    # "features": ["signups", "sso"],
+    "features": ["signups", "sso"],
 }
 
 # ------------------------------------------------------------------------------
